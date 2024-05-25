@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
         f.write('{} {}\n'.format(N, M[test]))
         f.write(''.join((str(int(t)) + ' ') for t in tau) + '\n')
-        f.write(''.join((str(int(t)) + ' ') for t in A) + '\n\n')
+        f.write(''.join((str(int(t)) + ' ') for t in A) + '\n')
 
         for i in range(N):
             f.write(str(int(W[i])) + '\n')
@@ -49,6 +49,4 @@ if __name__ == "__main__":
                 for machine in M_list:
                     f.write(str(int(machine)) + ' ' + str(np.random.randint(1, 11)) + ' ')
                 f.write('\n')
-
-            f.write('\n\n')
 
